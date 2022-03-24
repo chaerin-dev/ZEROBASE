@@ -8,6 +8,7 @@ function answer(x, y) {
     let t = x;
     x = y;
     y = t;
+    // ES6부터 [x, y] = [y, x] 으로 쉽게 x와 y를 swap 할 수 있음
   }
 
   for (let i = x; i <= y; i++) {
