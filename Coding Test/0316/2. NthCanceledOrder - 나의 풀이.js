@@ -23,3 +23,5 @@ function solution(orders, n) {
   // while문 안에서 마지막에 i++를 해줬으므로 최종 반환값은 i-1
   return i - 1;
 }
+
+// 점수: 1.0/1.0
