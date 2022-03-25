@@ -31,3 +31,5 @@ function solution(s) {
   // 문자를 숫자로 형 변환
   return Number(answer);
 }
+
+// 점수: 1.0/1.0
