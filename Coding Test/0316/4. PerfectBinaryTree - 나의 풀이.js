@@ -7,7 +7,7 @@
 */
 
 function solution(n) {
-  // result: 2^0 + 2^1 + ... + 2^n
+  // result: 2^0 + 2^1 + ... + 2^(n-1)
   let result = 0;
   for (let i = 0; i < n; i++) {
     result += Math.pow(2, i) % 1000000007;
