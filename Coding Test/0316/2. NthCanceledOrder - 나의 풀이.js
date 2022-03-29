@@ -11,7 +11,7 @@ function solution(orders, n) {
   let i = 1;
   // 취소된 주문의 개수를 저장할 변수
   let cnt = 0;
-  // 취소된 주문이 n개가 되면 while문 탈출 (cnt가 0부터 시작하므로 cnt < n)
+  // 취소된 주문이 n개가 되면 while문 탈출
   while (cnt < n) {
     // i가 orders에 포함되지 않으면 (i번 주문이 취소되었으면)
     if (!orders.includes(i)) {
