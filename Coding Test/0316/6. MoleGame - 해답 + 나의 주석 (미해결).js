@@ -47,6 +47,7 @@ function generateLinked(linkNums) {
   return linked;
 }
 
+// ??? 코드를 봐도 이해가 안돼요..
 function countMinClickToAllOut(state, linked, switchIndex) {
   // 기저사례 : 모든 스위치를 순회한 경우
   if (switchIndex >= linked.length) return isAllOut(state) ? 0 : INF;

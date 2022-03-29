@@ -19,7 +19,7 @@ function solution(arr, Num) {
   for (let i = 1; i < arr.length; i++) {
     array = array.concat(arr[i]);
   }
-  // 1차원 배열 array를 오름차순으로 정렬
+  // 1차원 배열 array를 오름차순 정렬
   array.sort(ascending_order);
   // Num번째 선수의 번호를 반환(배열 array의 인덱스는 0부터 시작하므로 Num-1 인덱스의 값 반환)
   return array[Num - 1];

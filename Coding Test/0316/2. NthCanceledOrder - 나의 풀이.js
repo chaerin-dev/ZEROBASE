@@ -7,9 +7,9 @@ n번째 주문 취소된 주문 번호를 구하는 함수, solution을 완성�
 */
 
 function solution(orders, n) {
-  // i를 1부터 1씩 증가시키며
+  // i(주문번호)를 1부터 1씩 증가시키며 확인
   let i = 1;
-  // 취소된 주문의 갯수를 저장할 변수
+  // 취소된 주문의 개수를 저장할 변수
   let cnt = 0;
   // 취소된 주문이 n개가 되면 while문 탈출 (cnt가 0부터 시작하므로 cnt < n)
   while (cnt < n) {
@@ -18,6 +18,7 @@ function solution(orders, n) {
       // 취소된 주문의 갯수 증가
       cnt++;
     }
+    // 다음 주문번호 확인
     i++;
   }
   // while문 안에서 마지막에 i++를 해줬으므로 최종 반환값은 i-1

@@ -9,11 +9,12 @@ solution을 완성해주세요.
 function solution(s) {
   // 무한반복 loop
   while (true) {
-    // 한 번의 loop를 끝까지 수행했을 때, done_flag가 true 상태로 남아있으면 반복문을 탈출!
+    // 한 번의 loop를 끝까지 수행했을 때,
+    // done_flag가 true 상태로 남아있으면(더 이상 연속되는 문자가 없으면) 반복문을 탈출!
     let done_flag = true;
     // 문자열의 각 문자에 대해서 (마지막 문자 제외)
     for (let i = 0; i < s.length - 1; i++) {
-      // 해당 문자가 다음 문자와 일치하면
+      // 해당 문자가 그 바로 다음 문자와 일치하면
       if (s[i] == s[i + 1]) {
         // 연속되는 두 문자를 이어붙이 문자열을 ""(공백)으로 대체
         s = s.replace(s[i] + s[i], "");
@@ -22,7 +23,7 @@ function solution(s) {
         done_flag = false;
       }
     }
-    // done_flag가 true 상태로 남아있으면 더이상 연속되는 문자가 없다는 뜻이므로 반복문을 탈출!
+    // done_flag가 true 상태로 남아있으면 더 이상 연속되는 문자가 없다는 뜻이므로 반복문을 탈출!
     if (done_flag) return s;
   }
 }

@@ -20,8 +20,7 @@ function solution(arr) {
   // 주머니에 남은 구슬이 홀수개이면 술래가 구슬을 가져간 것
   // arr를 오름차순으로 정렬
   arr.sort(ascending_order);
-  // 짝수 인덱스가 가리키는 값이 그 바로 다음 값과 다르다면
-  // 짝수 인덱스가 가리키는 값이 술래가 빼낸 구슬의 번호
+  // 짝수 인덱스가 가리키는 값이 그 바로 다음 값과 다르다면 짝수 인덱스가 가리키는 값이 술래가 빼낸 구슬의 번호
   for (let i = 0; i < arr.length; i = i + 2) {
     if (arr[i] != arr[i + 1]) return arr[i];
   }
