@@ -18,7 +18,7 @@
 */
 
 function solution(A, B) {
-  // 특정 유저에게 추천할 카테고리 Set
+  // 특정 유저에게 추천할 카테고리를 저장할 Set
   let category = new Set();
   // 특정 유저가 구독한 방송국들에 대해
   for (let i = 0; i < B.length; i++) {
@@ -27,7 +27,7 @@ function solution(A, B) {
       if (B[i] == A[j][1]) category.add(A[j][0]);
     }
   }
-  // 특정 유저에게 추천할 방송국 Set
+  // 특정 유저에게 추천할 방송국을 저장할 Set
   let recommend = new Set();
   // 특정 유저에게 추천할 카테고리에 대해
   for (let item of category.values()) {
