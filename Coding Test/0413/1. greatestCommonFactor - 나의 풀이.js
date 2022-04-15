@@ -23,7 +23,7 @@ function solution(A) {
   let answer = gcd(A[0], A[1]);
   // 배열 A의 세 번째 요소부터 마지막 요소 까지
   for (let i = 2; i < A.length; i++) {
-    // 이전 값들의 최대 공약수와 해당 요소의 최대 공약수를 구해 변수 answer 갱신
+    // 이전 값들의 최대 공약수와 해당 요소의 최대 공약수를 구해서 변수 answer 갱신
     answer = gcd(answer, A[i]);
   }
   return answer;
