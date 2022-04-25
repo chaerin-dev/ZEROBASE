@@ -6,3 +6,5 @@ $font-default: -apple-system, BlinkMacSystemFont, helvetica, Apple SD Gothic Neo
 $m-padding: 18px;
 $place-header-height: 48px;
 $place-tab-height: 48px;
+
+$header-height: $place-header-height + $place-tab-height;
