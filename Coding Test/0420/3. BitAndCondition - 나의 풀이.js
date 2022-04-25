@@ -54,3 +54,22 @@ function solution(arr) {
 }
 
 // 점수: 1.0/1.0
+
+function solution2(arr) {
+  if (arr.length === 0) return 0;
+  const answer = arr.reduce((a, b) => parseInt(a, 2) & parseInt(b, 2));
+  return answer;
+}
+
+console.log(solution2(["10110", "1010", "11110"]));
+console.log(solution2(["1101"]));
+console.log(solution2([]));
+console.log(solution2(["101010", "10101"]));
+console.log(solution2(["110011", "101010", "111110"]));
+console.log(solution2(["11111", "1010101", "1110111"]));
+// ['10110', '1010', '11110'] 2
+// ['1101'] 13
+// [] 0
+// ['101010', '10101'] 0
+// ['110011', '101010', '111110'] 34
+// ['11111', '1010101', '1110111'] 21

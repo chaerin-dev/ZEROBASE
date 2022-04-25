@@ -4,11 +4,12 @@
   background-color: $booking-color-bg155;
 
   .info-main-title {
+    line-height: 39px;
     display: flex;
     align-items: center;
     font-size: 18px;
     font-weight: 700;
-    letter-spacing: 0.3px;
+    letter-spacing: -0.3px;
     color: $booking-color-text6;
 
     .ico-n-logo {

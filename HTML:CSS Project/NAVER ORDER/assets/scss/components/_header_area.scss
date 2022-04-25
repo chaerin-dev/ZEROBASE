@@ -34,7 +34,7 @@
 
 .place-tab {
   display: flex;
-  height: $place-tap-height;
+  height: $place-tab-height;
   background-color: #03b753;
 
   .tab-inner {
@@ -70,7 +70,7 @@
         position: relative;
         display: inline-block;
         padding: 0 4px;
-        line-height: $place-tap-height;
+        line-height: $place-tab-height;
       }
     }
   }
