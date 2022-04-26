@@ -35,31 +35,3 @@ function solution(S) {
 }
 
 // 점수: 1.0/1.0
-
-function solution2(S) {
-  arr = S.split("");
-  let flag = true;
-  while (flag) {
-    flag = true;
-    for (let i = 0; i < arr.length - 1; i++) {
-      for (let j = i + 1; j < arr.length; j++) {
-        if (S[i] !== S[j]) {
-          if (j - i > 1) {
-            arr.splice(i, j - i);
-            flag = false;
-          } else break;
-        }
-      }
-    }
-  }
-  if (arr.length === 0) return 1;
-  return 0;
-}
-
-console.log(solution2("ABBA"));
-console.log(solution2("ACA"));
-console.log(solution2("ACACA"));
-console.log(solution2("ACAACABB"));
-console.log(solution2("ACADDFFACABB"));
-
-console.log(solution2("AABBA"));
