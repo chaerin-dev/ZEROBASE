@@ -498,6 +498,7 @@ textarea::-webkit-outer-spin-button {
 
 .menu-category-area {
   position: sticky;
+  z-index: 5500;
   top: 96px;
   margin-top: 10px;
   background-color: #fff;
@@ -788,8 +789,82 @@ textarea::-webkit-outer-spin-button {
   color: #333;
 }
 
+.order-box-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  border-top: 1px solid #e8e8e8;
+  box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  z-index: 9100;
+}
+
+.order-box-area .common-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+}
+
+.order-box-area .common-inner .menu-name {
+  font-size: 15px;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.order-box-area .common-inner .menu-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff3d3b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.order-box-area .common-inner .btn-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 46px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #01d760, #0ad18c);
+  font-weight: 700;
+  letter-spacing: -0.3;
+  color: #fff;
+}
+
+.order-box-area .common-inner .btn-order .icon {
+  position: relative;
+  margin-left: 6px;
+}
+
+.order-box-area .common-inner .btn-order .icon .ico-cart {
+  width: 20px;
+  height: 20px;
+}
+
+.order-box-area .common-inner .btn-order .icon .num {
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ff3d3b;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
 .container {
   padding-top: 96px;
+  padding-bottom: 70px;
   background-color: #f4f7f9;
 }
 
