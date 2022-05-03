@@ -1,4 +1,14 @@
 /* Base 스타일 작성 */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-black);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 *,
 *::before,
 *::after {
@@ -8,28 +18,14 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
-  color: var(--color-black);
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
 a {
   color: inherit;
   cursor: pointer;
   text-decoration: none;
 }
 
-a.hover a.focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -39,6 +35,7 @@ button {
   cursor: pointer;
 }
 
-button.disabled {
+button:disabled {
   cursor: not-allowed;
+  -webkit-appearance: none;
 }
