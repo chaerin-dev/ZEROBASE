@@ -1,1 +1,130 @@
 /* 오늘의 쇼핑 제안 */
+.for-screen-reader {
+  display: none;
+}
+
+.header-section {
+  width: 1022px;
+  margin: 100px auto 48px;
+}
+
+.logo-link {
+  display: block;
+}
+
+.coupang-logo {
+  width: 176px;
+  height: 40px;
+}
+
+.today-offer-section {
+  width: 1022px;
+  height: 354px;
+  margin: 0 auto;
+}
+
+.today-offer-header-area {
+  width: 234px;
+  height: 30px;
+  background-image: url(/assets/icon/shopping.svg);
+  background-repeat: no-repeat;
+}
+
+.today-offer-header {
+  margin-left: 30px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.today-offer-list-area {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.today-offer-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  height: 270px;
+  margin-right: 5px;
+}
+
+.discount-rate {
+  position: absolute;
+  width: 53px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  color: var(--color-white);
+  border-radius: 0px 0px 4px 0px;
+  background-color: var(--color-red-500);
+  z-index: 100;
+}
+
+.product-img {
+  width: 160px;
+  height: 160px;
+  margin: 14px auto 12px;
+}
+
+.item-info {
+  width: 172px;
+  margin: 0 auto;
+}
+
+.item-name {
+  font-size: 14px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.item-info-detail {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--color-gray-700);
+}
+
+.delivery-type {
+  height: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.delivery-type img {
+  width: 55px;
+  height: 16px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating {
+  width: 68px;
+  height: 12px;
+  margin-right: 4px;
+  background-image: url(/assets/sprites/rating-stars.png);
+}
+
+.star-4 {
+  background-position-y: -112px;
+}
+
+.star-4-5 {
+  background-position-y: -126px;
+}
+
+.star-5 {
+  background-position-y: -140px;
+}
+
+.review-count {
+  font-weight: 400;
+}
