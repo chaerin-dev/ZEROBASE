@@ -1,1 +1,134 @@
 /* 카테고리별 추천 광고상품 */
+.for-screen-reader {
+  display: none;
+}
+
+.header-section {
+  width: 1020px;
+  margin: 100px auto 48px;
+}
+
+.logo-link {
+  display: block;
+}
+
+.coupang-logo {
+  width: 246px;
+  height: 56px;
+}
+
+.category-recommend-section {
+  width: 1020px;
+  height: 1376px;
+  margin: 0 auto;
+}
+
+.category-recommend-header-area {
+  margin-bottom: 24px;
+}
+
+.category-recommend-sub-header {
+  font-weight: 500;
+}
+
+.category-recommend-header {
+  margin: 0;
+  color: var(--color-black);
+}
+
+.category-recommend-header span {
+  color: var(--color-blue-600);
+}
+
+.category-article {
+  display: flex;
+  /* align-items: center; */
+  width: 1022px;
+  height: 634px;
+  margin-bottom: 24px;
+  background-color: orange;
+}
+
+.category-header {
+  position: relative;
+  width: 172px;
+}
+
+.category-header-title {
+  position: absolute;
+  top: 48px;
+  left: 24px;
+}
+
+.category-title {
+  width: 89px;
+  height: 28px;
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-brown-300);
+}
+
+.shortcuts {
+  width: 62px;
+  height: 17px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-gray-700);
+}
+
+.hot-key-words {
+  position: absolute;
+  bottom: 28px;
+  left: 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hash-tag-list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 216px;
+  margin-top: 20px;
+}
+
+.hash-tag-item {
+  display: inline-block;
+  height: 26px;
+  padding: 6px 10px;
+  border: 1px solid var(--color-gray-400);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-brown-300);
+}
+
+.promotion-carousel {
+  width: 320;
+  height: 631;
+  margin-top: 1px;
+}
+
+.carousel-items {
+  position: relative;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.active {
+  display: initial;
+}
+
+.carousel-desc-box {
+  width: 260px;
+  height: 90px;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 58px;
+  background-color: var(--color-brown-300);
+  z-index: 1000;
+}
