@@ -1,22 +1,287 @@
+/* .header, .footer-bar .footer-main-area .footer-etc 등
+가로길이를 화면 크기에 맞게 채워야 하는 요소들이 있어 width: 100%를 적용했더니
+요소의 길이가 뷰포트의 너비로 설정되어 작은 화면에서 좌우 스크롤시 요소 우측이 잘립니다.
+이 문제를 해결하기 위해서 위 요소들에 min-width: 1200px을 적용하니
+이번에는 작은 화면에서 요소들이 가운데 정렬이 되지 않습니다.
+어떻게 해결해야 할까요? */
+
 /* ---------------------------------------------- */
 /* 헤더                                            */
 /* ---------------------------------------------- */
+.header {
+  height: 117px;
+  border-bottom: 1px solid var(--color-gray-100);
+}
 
+.header__inner {
+  width: 1020px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.button--category {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 110px;
+  height: 116px;
+  border: none;
+  background-color: var(--color-blue-600);
+  font-size: 12px;
+  color: var(--color-white);
+}
+
+.button--category:focus-visible {
+  outline: 0;
+  box-shadow: inset 0 0 1px 1px var(--color-red-500);
+  border-radius: 4px;
+}
+
+.button--category svg {
+  margin: 30px 0 12px 0;
+}
 
 /* ---------------------------------------------- */
 /* 내비게이션                                        */
 /* ---------------------------------------------- */
 
+.navigation {
+  position: absolute;
+  top: 117px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1020px;
+  height: 520px;
+  margin: 0 auto;
+  transform: translateX(-510px, 0);
+}
+
+.navigation:not(.is--active) {
+  display: none;
+}
+
+.navigation ul {
+  padding: 10px 5px;
+}
+
+.navigation li {
+  list-style: none;
+  width: 170px;
+  height: 30px;
+}
+
+.navigation a {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  width: 170px;
+  height: 30px;
+  padding-left: 16px;
+  font-size: 12px;
+}
+
+.navigation i {
+  font-size: 20px;
+  margin-top: -3px;
+}
+
+.icon-new {
+  margin-left: 6.5px;
+}
+
+.navigation__inner {
+  position: relative;
+  width: 540px;
+  height: 500px;
+}
+
+.navigation__list {
+  width: 180px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 4px var(--color-opacity-25);
+}
+
+.depth1 {
+  left: 0;
+  z-index: 10;
+}
+
+.depth2 {
+  left: calc(100% * 1);
+  z-index: 20;
+}
+
+.depth3 {
+  left: calc(100% * 1);
+  z-index: 30;
+}
+
+.depth2:not(.is--active),
+.depth3:not(.is--active) {
+  display: none;
+}
+
+.navigation a.is--active,
+.navigation a:hover,
+.navigation a:focus {
+  color: var(--color-blue-600);
+  font-weight: 700;
+}
+
+.navigation a.is--active {
+  background-image: url(/assets/icon/more-right-active.svg);
+  background-repeat: no-repeat;
+  background-position: 151.5px center;
+}
 
 /* ---------------------------------------------- */
 /* 메인 콘텐츠                                       */
 /* ---------------------------------------------- */
 /* 메인 콘텐츠 영역의 최소 높이 설정 */
-.main{
+.main {
   min-height: 52rem;
 }
-
 
 /* ---------------------------------------------- */
 /* 푸터                                            */
 /* ---------------------------------------------- */
+.footer-bar {
+  height: 40px;
+  background-color: var(--color-gray-200);
+}
+
+.footer-bar-inner {
+  width: 1006px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: var(--color-gray-800);
+}
+
+.footer-bar a {
+  flex-grow: 1;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.footer-main-area {
+  height: 207px;
+  background-color: var(--color-white);
+}
+
+.footer-main-area-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 143px;
+  margin: 32px auto;
+  vertical-align: middle;
+  font-size: 16px;
+  color: var(--color-gray-800);
+}
+
+.coupang-logo {
+  width: 176px;
+  height: 40px;
+  text-indent: -9999px;
+  background-image: url(/assets/logo/logo-mono.svg);
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 143px;
+}
+
+.customer-center {
+  display: flex;
+  flex-direction: column;
+  height: 143px;
+}
+
+.customer-center div {
+  height: 19px;
+  margin-bottom: 8px;
+}
+
+.customer-center span:nth-child(1) {
+  display: inline-block;
+  height: 12px;
+  line-height: 12px;
+  padding-right: 14px;
+  border-right: 1px solid var(--color-gray-800);
+}
+
+.customer-center span:nth-child(2) {
+  padding-left: 14px;
+}
+
+.tel {
+  height: 58px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.mail {
+  height: 19px;
+  margin: 0;
+}
+
+.payment-guarantee {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 282px;
+  height: 84px;
+}
+
+.footer-etc {
+  overflow: auto;
+  height: 102px;
+  background-color: var(--color-gray-900);
+}
+
+.footer-etc-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 1020px;
+  height: 70px;
+  margin: 16px auto;
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--color-gray-200);
+}
+
+.sns {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 122px;
+}
+
+.icon-instagram {
+  border-radius: 50%;
+  background: linear-gradient(
+    174.12deg,
+    #285aeb 5.61%,
+    #bc1888 22.32%,
+    #cc2366 36.16%,
+    #dc2743 51.91%,
+    #e6683c 73.38%,
+    #f09433 91.99%
+  );
+}
