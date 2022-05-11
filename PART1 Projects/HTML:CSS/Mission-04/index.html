@@ -32,15 +32,14 @@
       <div class="main-header-bar">
         <div class="main-header-area">
           <!-- 쿠팡로고 -->
-          <h1>
-            <a
-              href="https://www.coupang.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Coupang
-            </a>
-          </h1>
+          <a
+            href="https://www.coupang.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="coupang-logo"
+          >
+            <h1>Coupang</h1>
+          </a>
           <!-- /쿠팡로고 -->
           <!-- 카테고리버튼 -->
           <button class="button--category">카테고리</button>
@@ -49,7 +48,8 @@
           <form action="" method="get" class="search-section">
             <!-- 드롭다운 -->
             <fieldset class="select-box-fieldset">
-              <select class="select-box" name="select-box-inner">
+              <!-- <div class="select-box-inner"> -->
+              <select class="select-box" name="select-box">
                 <option value="all" selected>전체</option>
                 <option value="all">여성패션</option>
                 <option value="all">남성패션</option>
@@ -87,6 +87,7 @@
               >
                 <path d="M4 6H11L7.5 10.5L4 6Z" fill="currentColor" />
               </svg>
+              <!-- </div> -->
             </fieldset>
             <!-- /드롭다운 -->
             <!-- 검색창 -->
@@ -133,7 +134,11 @@
           <ul class="link-list">
             <li class="link-item">
               <a href="/">
-                <img src="/assets/icon/icon-rocket.svg" alt="로켓배송 아이콘" />
+                <img
+                  src="/assets/icon/icon-rocket.svg"
+                  alt="로켓배송 아이콘"
+                  class="icon-rocket"
+                />
                 로켓배송
               </a>
             </li>
@@ -142,13 +147,19 @@
                 <img
                   src="/assets/icon/icon-fresh.svg"
                   alt="로켓프레시 아이콘"
+                  class="icon-fresh"
                 />
                 로켓프레시
               </a>
             </li>
             <li class="link-item">
               <a href="/">
-                2022년 설날<img src="/assets/icon/new.svg" alt="New 아이콘" />
+                2022년 설날
+                <img
+                  src="/assets/icon/new.svg"
+                  alt="New 아이콘"
+                  class="icon-new"
+                />
               </a>
             </li>
             <li class="link-item"><a href="/">로켓직구</a></li>
