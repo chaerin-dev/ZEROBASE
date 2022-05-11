@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내비게이션 및 푸터 - 쿠팡(Coupang)</title>
+    <link rel="icon" href="/assets/favicon/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheets/main.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- 헤더 영역 -->
+      <!-- 대제목의 경우 "Coupang"으로 미리 마크업되어 있습니다. -->
+      <h1 class="sr-only">Coupang</h1>
+      <div class="header__inner">
+        <!-- 카테고리 버튼은 .header__inner 영역 안에 마크업 해주세요. -->
+        <button class="button--category">
+          <svg
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M30 6H0V0H30V6Z" fill="white" />
+            <path d="M30 18H0V12H30V18Z" fill="white" />
+            <path d="M0 30H30V24H0V30Z" fill="white" />
+          </svg>
+          카테고리
+        </button>
+      </div>
+    </header>
+
+    <nav class="navigation">
+      <!-- 내비게이션 영역 -->
+      <!-- 내비게이션 제목 -->
+      <h2 class="sr-only">카테고리 네비게이션</h2>
+      <div class="navigation__inner">
+        <!-- 카테고리별 내비게이션(메뉴) 영역 -->
+        <ul class="navigation__list first-depth">
+          <li>
+            <a class="icon-clothes" href="/" role="button">패션의류/잡화</a>
+            <ul class="navigation__list second-depth">
+              <li>
+                <a href="/" role="button">여성패션</a>
+                <ul class="navigation__list third-depth">
+                  <li>
+                    <a href="/">의류</a>
+                    <a href="/">속옷/잠옷</a>
+                    <a href="/">신발</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="/" role="buton">남성패션</a></li>
+              <li><a href="/" role="button">유아동패션</a></li>
+            </ul>
+          </li>
+          <li><a class="icon-beauty" href="/" role="button">뷰티</a></li>
+          <li><a class="icon-baby" href="/" role="button">출산유아동</a></li>
+          <li><a class="icon-foods" href="/" role="button">식품</a></li>
+          <li>
+            <a class="icon-kitchenware" href="/" role="button">주방용품</a>
+          </li>
+          <li><a class="icon-houseware" href="/" role="button">생활용품</a></li>
+          <li>
+            <a class="icon-interior" href="/" role="button">홈인테리어</a>
+          </li>
+          <li>
+            <a class="icon-appliances" href="/" role="button">가전디지털</a>
+          </li>
+          <li><a class="icon-sports" href="/" role="button">스포츠</a></li>
+          <li><a class="icon-car" href="/" role="button">자동차용품</a></li>
+          <li><a class="icon-book" href="/" role="button">도서음반</a></li>
+          <li><a class="icon-toy" href="/" role="button">완구취미</a></li>
+          <li>
+            <a class="icon-stationery" href="/" role="button">문구오피스</a>
+          </li>
+          <li><a class="icon-pet" href="/" role="button">반려동물</a></li>
+          <li><a class="icon-travel" href="/" role="button">여행티켓</a></li>
+          <li><a class="icon-theme" href="/" role="button">테마관</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <!-- 메인 콘텐츠 영역 -->
+      <!-- 해당 영역은 추가적인 마크업없이 비워놓아 주세요. -->
+    </main>
+
+    <footer class="footer">
+      <!-- 푸터 영역 -->
+      <!-- 푸터 관련 콘텐츠는 .footer 영역 안에 마크업 해주세요. -->
+    </footer>
+  </body>
+</html>
