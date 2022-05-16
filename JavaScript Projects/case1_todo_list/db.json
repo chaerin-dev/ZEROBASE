@@ -14,11 +14,6 @@
       "content": "테스트 3",
       "completed": false,
       "id": 3
-    },
-    {
-      "content": "테스트 4",
-      "completed": true,
-      "id": 4
     }
   ]
 }
