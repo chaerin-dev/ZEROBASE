@@ -1,15 +1,17 @@
-;(function () {
-  'use strict'
+(function () {
+  "use strict";
 
   const get = (target) => {
-    return document.querySelector(target)
-  }
+    return document.querySelector(target);
+  };
+
+  const $todos = get(".todos");
 
   const createTodoElement = (item) => {
-    const { id, content } = item
-    const $todoItem = document.createElement('div')
-    $todoItem.classList.add('item')
-    $todoItem.dataset.id = id
+    const { id, content } = item;
+    const $todoItem = document.createElement("div");
+    $todoItem.classList.add("item");
+    $todoItem.dataset.id = id;
     $todoItem.innerHTML = `
             <div class="content">
               <input
@@ -35,10 +37,30 @@
                 <i class="fas fa-times"></i>
               </button>
             </div>
-      `
-    return $todoItem
-  }
+      `;
+    return $todoItem;
+  };
 
-  const init = () => {}
-  init()
-})()
+  const renderAllTodos = (todos) => {
+    $todos.innerHTML = "";
+    todos.forEach((item) => {
+      const todoElement = createTodoElement(item);
+      $todos.appendChild(todoElement);
+    });
+  };
+
+  const getTodos = () => {
+    fetch("http://localhost:3000/todos")
+      .then((response) => response.json())
+      .then((todos) => renderAllTodos(todos))
+      .catch((error) => console.error("Error:", error));
+  };
+
+  const init = () => {
+    window.addEventListener("DOMContentLoaded", (event) => {
+      getTodos();
+    });
+  };
+
+  init();
+})();
