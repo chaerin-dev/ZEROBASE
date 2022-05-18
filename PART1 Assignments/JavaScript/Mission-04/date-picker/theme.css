@@ -1,26 +1,33 @@
 .calendar {
-  position: absolute;
-  left: 0;
-  top: 40px;
-  width: 300px;
-  height: 350px;
+  display: none;
+  --calendar-size: 280px;
+  width: var(--calendar-size);
+  height: calc(var(--calendar-size) * 1.2);
+  font-size: calc(var(--calendar-size) * 0.06);
   border-radius: 5%;
   box-shadow: 0 0 10px 2px #aaaaaa;
   overflow: hidden;
 }
+.displayed {
+  display: block;
+}
 .calendar-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  text-align: center;
   width: 100%;
   height: 20%;
+  color: #fff;
   background-color: #55be77;
 }
 .button {
-  width: 25%;
+  width: 20%;
   height: 100%;
   background-repeat: no-repeat;
   background-size: 20%;
   background-position: center;
+  cursor: pointer;
 }
 .prev {
   background-image: url(assets/left-arrow-solid-24.png);
@@ -28,32 +35,41 @@
 .next {
   background-image: url(assets/right-arrow-solid-24.png);
 }
-.now-info {
-  width: 50%;
-  color: #fff;
-}
-.now-year {
+.year {
   font-size: 0.8em;
 }
 .calendar-grid {
   display: grid;
-  align-items: center;
   grid-template-rows: repeat(6, 1fr);
+  grid-auto-rows: 1fr;
   grid-template-columns: repeat(7, 1fr);
   height: 80%;
   font-size: 0.8em;
 }
-.date {
+.date,
+.day {
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1/1;
   border-radius: 50%;
+}
+.date {
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+.today {
+  border: 1px solid #55be77;
 }
 .SUN {
   color: red;
 }
-.blurred,
-.day {
+.day,
+.blurred {
   color: grey;
+}
+.hovered,
+.selected {
+  color: #fff;
+  background-color: #55be77;
+  transition: background-color 0.3s;
 }

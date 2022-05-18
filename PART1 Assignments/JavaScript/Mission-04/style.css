@@ -13,15 +13,13 @@ body {
   text-align: center;
 }
 .date-picker {
-  position: relative;
   width: 170px;
-  text-align: center;
-  margin: 0px auto;
-  user-select: none;
+  margin: 10px auto;
 }
 .date-picker-input {
   width: 170px;
   height: 35px;
-  padding: 5px;
+  margin-bottom: 5px;
+  padding-left: 10px;
   cursor: pointer;
 }
