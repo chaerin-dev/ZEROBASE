@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add React in One Minute</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="top-area"></div>
+      <div class="bottom-area">
+        <div class="profile-image">zero-base</div>
+        <div class="profile-info">
+          <h3 class="name">제로베이스_프론트엔드</h3>
+          <h5 class="id">@zerobase_frontend</h5>
+          <p>누구나 프론트엔드 개발자가 될 수 있어요!</p>
+        </div>
+        <!-- Step 1. HTML 파일에 DOM 컨테이너 설치 -->
+        <!-- HTML 파일에서 React로 원하는 내용을 표시할 위치에 비어있는 div 태그를 추가 -->
+        <!-- 이 div 태그에 id를 부여함으로써 JavaScript가 태그를 찾고 찾은 태그 안에 React 컴포넌트를 표시할 수 있음 -->
+        <div id="follow_button_container"></div>
+      </div>
+    </div>
+
+    <!-- Step 2. script 태그 추가 -->
+    <!-- script 태그 3개를 body 태그 끝부분에 추가 -->
+    <!-- 처음 두 script 태그는 React를 실행시키고 세 번째 script 태그는 만든 컴포넌트를 실행 -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="follow_button.js"></script>
+  </body>
+</html>

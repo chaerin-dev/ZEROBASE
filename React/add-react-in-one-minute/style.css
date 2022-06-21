@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  width: 100%;
+}
+
+.top-area {
+  height: 300px;
+  background-color: lightgrey;
+}
+
+.bottom-area {
+  position: relative;
+  padding-top: 150px;
+  padding-left: 20px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -100px;
+  left: 20px;
+  background-color: cornflowerblue;
+  border: 10px solid white;
+  border-radius: 50%;
+  color: white;
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 180px;
+}
+
+.name {
+  font-size: 30px;
+}
+
+.id {
+  padding-bottom: 15px;
+  color: darkgray;
+  font-size: 25px;
+  font-weight: 500;
+}
